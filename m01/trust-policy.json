@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": {
+          "Service": "translate.amazonaws.com"
+        },
+        "Action": "sts:AssumeRole",
+        "Condition": {
+          "ArnLike": {
+              "aws:SourceArn": "arn:aws:translate:*:804540873837:*"
+          },
+          "StringEquals": {
+              "aws:SourceAccount": "804540873837"
+          }
+        }
+      }
+    ]
+  }
