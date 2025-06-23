@@ -30,11 +30,12 @@ aws translate start-text-translation-job \
 Then you can check on the progress of your job:
 
 ```bash
-aws translate list-text-translation-jobs
+aws translate list-text-translation-jobs \
+--query 'TextTranslationJobPropertiesList[?JobName==`translate-alice-wonderland`]'
 ```
 
 You can also review the output of the job in the S3 Bucket:
 
 ```bash
-aws s3 ls s3://ps-translations-fmc/translation-outputs/english-ivan-illich
+aws s3 ls s3://ps-translations-fmc/translation-outputs/
 ```
