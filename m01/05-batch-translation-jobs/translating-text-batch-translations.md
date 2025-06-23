@@ -21,7 +21,7 @@ Now you can translate the document:
 aws translate start-text-translation-job \
 --job-name "translate-alice-wonderland" \
 --input-data-config "S3Uri=s3://ps-translations-fmc/input/,ContentType=text/plain" \
---output-data-config "S3Uri=s3://ps-translations-fmc/translation-outputs/english-ivan-illich/" \
+--output-data-config "S3Uri=s3://ps-translations-fmc/translation-outputs/" \
 --source-language-code "en" \
 --target-language-codes es fr de \
 --data-access-role-arn "arn:aws:iam::804540873837:role/TranslateS3Role"
