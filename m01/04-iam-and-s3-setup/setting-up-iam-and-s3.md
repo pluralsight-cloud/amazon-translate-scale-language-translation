@@ -28,7 +28,6 @@ Then create a policy for that role to assume:
 aws iam create-policy \
 --policy-name s3AccessForTranslate \
 --policy-document file://translate-allow-s3-policy.json
---no-cli-pager
 ```
 
 Copy the resulting ARN from the command above or get it again with this command:
