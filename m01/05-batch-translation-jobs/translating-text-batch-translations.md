@@ -19,7 +19,7 @@ Now you can translate the document:
 
 ```bash
 aws translate start-text-translation-job \
---job-name "translate-alice-wonderland"
+--job-name "translate-alice-wonderland" \
 --input-data-config "S3Uri=s3://ps-translations-fmc/input/,ContentType=text/plain" \
 --output-data-config "S3Uri=s3://ps-translations-fmc/translation-outputs/english-ivan-illich/" \
 --source-language-code "en" \
