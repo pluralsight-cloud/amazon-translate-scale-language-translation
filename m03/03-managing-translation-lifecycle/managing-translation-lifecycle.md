@@ -19,7 +19,7 @@ Then, allow the role to use several managed AWS policies:
 ```bash
 aws iam attach-role-policy --role-name lambda-s3-translate-role --policy-arn arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
 aws iam attach-role-policy --role-name lambda-s3-translate-role --policy-arn arn:aws:iam::aws:policy/CloudWatchLogsFullAccess
-aws iam attach-role-policy --role-name lambda-s3-translate-role --policy-arn arn:aws:iam::aws:policy/AmazonTranslateFullAccess
+aws iam attach-role-policy --role-name lambda-s3-translate-role --policy-arn arn:aws:iam::aws:policy/TranslateFullAccess
 ```
 
 Then create your Lambda Function package:
